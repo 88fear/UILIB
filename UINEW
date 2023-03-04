@@ -253,47 +253,6 @@ library.createToggle = function(option, parent)
             Parent = option.main
         })
 
-        library:Create("ImageLabel", {
-            AnchorPoint = Vector2.new(0.5, 0.5),
-            Position = UDim2.new(0.5, 0, 0.5, 0),
-            Size = UDim2.new(1, -2, 1, -2),
-            BackgroundTransparency = 1,
-            Image = "rbxassetid://3570695787",
-            ImageColor3 = Color3.fromRGB(60, 60, 60),
-            Parent = tickbox
-        })
-
-        library:Create("ImageLabel", {
-            AnchorPoint = Vector2.new(0.5, 0.5),
-            Position = UDim2.new(0.5, 0, 0.5, 0),
-            Size = UDim2.new(1, -6, 1, -6),
-            BackgroundTransparency = 1,
-            Image = "rbxassetid://3570695787",
-            ImageColor3 = Color3.fromRGB(40, 40, 40),
-            Parent = tickbox
-        })
-
-        tickboxOverlay = library:Create("ImageLabel", {
-            AnchorPoint = Vector2.new(0.5, 0.5),
-            Position = UDim2.new(0.5, 0, 0.5, 0),
-            Size = UDim2.new(1, -6, 1, -6),
-            BackgroundTransparency = 1,
-            Image = "rbxassetid://3570695787",
-            ImageColor3 = library.flags["Menu Accent Color"],
-            Visible = option.state,
-            Parent = tickbox
-        })
-
-        library:Create("ImageLabel", {
-            AnchorPoint = Vector2.new(0.5, 0.5),
-            Position = UDim2.new(0.5, 0, 0.5, 0),
-            Size = UDim2.new(1, 0, 1, 0),
-            BackgroundTransparency = 1,
-            Image = "rbxassetid://5941353943",
-            ImageTransparency = 0.6,
-            Parent = tickbox
-        })
-
         table.insert(library.theme, tickboxOverlay)
     else
         tickbox = library:Create("Frame", {
@@ -302,27 +261,6 @@ library.createToggle = function(option, parent)
             BackgroundColor3 = library.flags["Menu Accent Color"],
             BorderColor3 = Color3.new(),
             Parent = option.main
-        })
-
-        tickboxOverlay = library:Create("ImageLabel", {
-            Size = UDim2.new(1, 0, 1, 0),
-            BackgroundTransparency = option.state and 1 or 0,
-            BackgroundColor3 = Color3.fromRGB(50, 50, 50),
-            BorderColor3 = Color3.new(),
-            Image = "rbxassetid://4155801252",
-            ImageTransparency = 0.6,
-            ImageColor3 = Color3.new(),
-            Parent = tickbox
-        })
-
-        library:Create("ImageLabel", {
-            Size = UDim2.new(1, 0, 1, 0),
-            BackgroundTransparency = 1,
-            Image = "rbxassetid://2592362371",
-            ImageColor3 = Color3.fromRGB(60, 60, 60),
-            ScaleType = Enum.ScaleType.Slice,
-            SliceCenter = Rect.new(2, 2, 62, 62),
-            Parent = tickbox
         })
 
         library:Create("ImageLabel", {
